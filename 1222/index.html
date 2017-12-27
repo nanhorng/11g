@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			font-family: "微軟正黑體";
+		}
+		body,h1,h2,h3,h4,h5,h6,ul,li,p{
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.clearfix::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		a{
+			text-decoration: none;
+			color:#000;
+		}
+		img{
+			width: 100%;
+		}
+		.fixed-width{
+			width: 960px;
+			margin:auto;
+		}
+		.full-width{
+			width: 100%;
+		}
+	.col-2{
+		width: calc(50% - 30px);/*calc計算*/
+		float: left;
+		margin: 0 15px;
+	}
+	.col-3{
+		width: calc(100% / 3 - 30px);/*col-3:3欄*/
+		float: left;
+		margin: 0 15px;
+	}
+	.col-4{
+		width: calc(100% / 4 - 30px);
+		float: left;
+		margin: 0 15px;
+	}
+	nav{
+		background-color: transparent;/*透明*/
+		position: fixed;
+		z-index: 9;
+
+
+	}
+	nav .logo{
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		color:#fff;
+		font-size: 22px;
+		border:2px solid #fff;
+		font-weight: 700;
+		margin:12px 0;
+	}
+	nav .orange{
+			color:#f86006;
+		}
+		nav ul{
+			float: right;
+		}
+		nav li {
+			list-style-type: none;
+			float: left;
+		}
+		nav a{
+			display: block;
+			height: 70px;
+			line-height: 70px;
+			color: #fff;
+			text-align: center;
+			padding-left: 15px;
+		}
+		header{
+			background-image: url(preparation-of-morning-coffee-in-restaurant.jpg);
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+			padding: 250px 0 500px 0;
+
+		}
+		header .title{
+			text-align: center;
+		}
+		header .title h1{
+			font-size: 36px;
+			color:#fff;
+		}
+		header .title hr{
+			width: 200px;
+			height: 1px;
+			background-color: #fff;
+		}
+		header .title h3{
+			color: #fff;
+			font-style: italic;/*斜體*/
+			font-size: 20px;
+		}
+		header .title a,.orangeblock .right a{/*按鈕*/
+			display: block;
+			width: 86px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			background-color: rgba(255,255,255,.3);/*.3為透明度*/
+			padding: 10px 20px;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 0; 
+			border-radius: 5px;
+			transition: all 0.3s;
+
+
+		}
+		header .title a:hover{
+			background-color: #c15d1f;
+		}
+		header .menu{
+			color: #fff;
+			text-align: center;
+			margin-top: 50px;
+					}
+		header .icon{
+			border-radius: 50%;
+			border: 1px solid #fff;
+			padding: 10px;
+			margin-bottom: 15px;
+
+		}
+		header .menu .col-3{
+			transition:all 0.3s;
+			padding: 15px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		header .menu .col-3:hover{
+			background-color: rgba(255, 0, 0, 0.6);
+		}
+		.orangeblock{
+			height: 200px;
+			background-color: #c15d1f;
+		}
+		.orangeblock .left{
+			float: left;
+			font-size: 22px;
+			color:#fff;
+			line-height: 200px;
+		}
+		.orangeblock .right{/*按鈕鍵跟header>a一樣，故寫法見header>a*/
+			float: right;
+		}
+		.orangeblock .right a {
+			font-size: 12px;
+			margin-top: 75px;
+			transition: all 0.3s;
+		}
+		.orangeblock .right a:hover{
+			background-color: blue;
+		}
+		.what{
+			text-align: center;
+		}
+		header .what h2{
+			color: #fff;
+			margin: 30px 0 15px 0;
+			font-size: 36px;
+		}
+		.what h4{
+			color: #fff;
+			margin: 15px 0 60px 0;
+			                }
+		.what .col-3{
+			background-color: #fff;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.what .col-3 h5{
+			margin: 5px 0;
+			color: rgba(0,0,0,0.8); 
+			font-size: 18px;
+		}
+		.what .col-3 p {
+			font-size: 12px;
+			color: rgba(0,0,0,0.7);
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="full-width clearfix"><!-- 浮動 -->
+		<div class="fixed-width">
+			<div class="logo">FEATURE<span class="orange">D</span></div>
+
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Service</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Team</a></li>
+				<li><a href="">Store</a></li>
+				<li><a href="">Testimonial</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+<header class="full-width">
+	<div class="title">
+		
+		<h1>Beautiful WordPress Business Theme</h1>
+		<hr>
+		<h3>Cleanly Coded With User Friendly Interface</h3>
+		<a href="">Buy Now</a>
+	</div>
+		<div class="menu fixed-width clearfix">
+			<div class="col-3">
+				<div class="icon fa fa-linode fa-2x"></div>
+				<h4>Parallax Effect</h4>
+				<p>Lorem ipsum dolor sit amet, </p>
+			</div>
+			<div class="col-3">
+				<div class="icon fa fa-american-sign-language-interpreting fa-2x"></div>
+				<h4>Unlimited Options</h4>
+				<p>Lorem ipsum dolor sit amet A</p>
+			</div>
+			<div class="col-3">
+				<div class="icon fa fa-wifi fa-2x"></div>
+				<h4>Responsice Design</h4>
+				<p>Lorem ipsum dolor sit amet </p>
+			</div>
+			
+		</div>
+		<div class="orangeblock full-width">
+			<div class="fixed-width">
+				<div class="left">
+					Easy to step up, just take a few steps and your website is ready within a minute
+				</div>
+				<div class="right">
+					<a href="">Call To Action</a>
+				</div>
+			</div>
+		</div>
+		<div class="what">
+			<div class="fixed-width">
+			<h2>What We Do</h2>
+			<h4>This Is SubTitle</h4>
+			<div class="col-3">
+				<div class="icon_what fa fa-medium fa-2x"></div>
+
+				<h5>Frequently Asked Question</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			<div class="col-3">
+				<div class="icon_what fa fa-ioxhost fa-2x"></div>
+
+				<h5>Free Training & Courses</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			<div class="col-3">
+				<div class="icon_what fa fa-stumbleupon fa-2x"></div>
+
+				<h5>Clean Code</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			<div class="col-3">
+				<div class="icon_what fa fa-hospital-o fa-2x"></div>
+
+				<h5>Only Good In PayPal</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			<div class="col-3">
+				<div class="icon_what fa fa-openid fa-2x"></div>
+
+				<h5>Production Graph</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			<div class="col-3">
+				<div class="icon_what fa fa-wheelchair-alt fa-2x"></div>
+
+				<h5>Marketing Strategy</h5>
+				<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+			</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>picture change</title>
+	<style>
+		#gallery {
+			width: 600px;
+		}
+		#thumbs img {
+			width: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="gallery">
+		<img src="images/photo-1.jpg" alt="">
+	</div>
+	<div id="thumbs">
+		<img src="images/photo-1.jpg" alt="">
+		<img src="images/photo-2.jpg" alt="">
+		<img src="images/photo-3.jpg" alt="">
+		<img src="images/photo-4.jpg" alt="">
+		<img src="images/photo-5.jpg" alt="">
+	</div>
+<script>
+		let gallery = document.getElementById("gallery").children[0];
+		console.log(gallery);
+		let thumbs = document.getElementById("thumbs").children;//取小圖
+		console.log(thumbs);
+		for(let i=0;i<thumbs.length;i++){
+			// console.log(i);
+			thumbs[i].onmouseover = function(){
+				console.log(gallery.getAttribute("src"));//取得屬性
+				// let newImg = thumbs[i].getAttribute("src");
+				// gallery.setAttribute("src",newImg);另一種寫法(取代下一列)
+				gallery.setAttribute("src",this.getAttribute("src"));
+				//將大圖改變成小圖的路徑
+			}
+		}
+
+	</script>
+
+	
+</body>
+</html>
